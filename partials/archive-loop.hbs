@@ -1,0 +1,12 @@
+<h4 class="text-right">Archive</h4>
+{{#get "posts" limit="all"}}
+  <ul class="archive-loop">
+    {{#foreach posts}}
+      <li>
+        <a href="{{url}}">
+            <p><small>{{title}}</small></p>
+        </a>
+      </li>
+    {{/foreach}}
+  </ul>
+{{/get}}

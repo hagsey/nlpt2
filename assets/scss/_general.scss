@@ -1,0 +1,75 @@
+
+
+// Theme colors
+$color-highlight-1: #ffd10c;
+$color-dark-gray: #474747;
+$theme-color-dark: #0a0a0a;
+$theme-color-gray: #e2e2e2;
+$theme-color-light: #ffffff;
+$text-link-color: #3b5998;
+$button-red: #e65555;
+$button-email: #2ecc71;
+
+// Fonts
+$font-title: "Cormorant Garamond", Georgia, serif;
+
+// Share
+$twitter: #00aced;
+$facebook: #3b5998;
+$google: #dd4b39;
+$mail: #ffeb3b;
+
+// Layout
+$mq-xs: 20em;
+$mq-sm: 30em;
+$mq-md: 54em;
+$mq-lg: 64em;
+$mq-xl: 76.5em;
+$mq-xxl: 114em;
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+p {
+  margin-bottom: 15px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  margin: 20px 0;
+  font-size: 1em;
+  font-style: italic;
+  color: #525252;
+}
+
+section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #e8e8e8;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+}
+
+label {
+  display: inline;
+  font-weight: 400;
+}
+a {
+  color: #7b7b7b;
+    transition: all 0.2s ease;
+
+
+}
+a:hover {
+  text-decoration: none;
+  color: $color-highlight-1;
+}

@@ -1,0 +1,14 @@
+      <h4 class="text-right">Topics</h4>
+      {{#get "tags" limit="all" include="count.posts"}}
+        <ul class="tag-loop">
+          {{#foreach tags}}
+            {{#if count.posts}}
+              <li>
+                <a href="/tag/{{slug}}/">
+                    <p class="card__header"><small>{{name}} ({{count.posts}})</small></p>
+                </a>
+              </li>
+            {{/if}}
+          {{/foreach}}
+        </ul>
+      {{/get}}

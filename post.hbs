@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{#post}}
+
+<div class="post">
+
+
+<h1 class="post-title">{{title}}</h1>
+<p>Posted on {{date format="MMMM D, YYYY"}}</p>
+{{> "share"}}
+{{#if image}}
+  <img src="{{image}}" />
+{{/if}}
+  {{content}}
+</div>
+
+{{/post}}

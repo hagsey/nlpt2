@@ -1,0 +1,21 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- If we have a tag cover, display that - else blog cover - else nothing --}}
+{{#tag}}
+  <div class="main-header-content inner">
+      <h1 class="page-title">Topic: {{name}}</h1>
+      <p><a href="/blog"><i style="margin-right:10px" class="fa fa-lg fa-mail-reply"></i>Back to blog</a></p>
+  </div>
+  {{#get "posts" limit="all" filter="tag:{{name}}"}}
+    {{#foreach posts}}
+    <div class="post-preview-area">
+          <h4><time class="text-muted" datetime="{{date format="YYYY-MM-DD"}}"><i style="margin-right:10px;" class="fa fa-calendar"></i>{{date format="MMMM D, YYYY"}}</time></h4>
+          <h2><a class="post-title" href="{{url}}">{{title}}</a></h2>
+          <img src="{{image}}" />
+          <p>{{excerpt words="100"}} <a class="read-more" href="{{url}}">Read more &raquo;</a></p>
+    </div>
+    {{/foreach}}
+  {{/get}}
+{{/tag}}
+
