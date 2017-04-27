@@ -17,7 +17,15 @@
   }
 }
 
+.dropdown-menu>li>a {
+  padding: 5px 20px;
+}
+.navbar li.disabled > a:hover {
+  cursor: default;
+}
+
 /* SUBSCRIBE */
+
 .subscribe-wrapper {
   background: $color-highlight-1;
 }
@@ -106,7 +114,13 @@ FOOTER
   a, p, td, h1, h2, h3, h4, h5 {
     color: white;
   }
+  a:hover {
+    color: $color-highlight-1;
+  }
   .address {
+    background: transparent;
+    padding: 0;
+    border: none;
     p {
       margin: 0;
       padding: 0;
@@ -178,6 +192,10 @@ LOOP
 
   }
 }
+.archive-loop {
+  height: 500px;
+  overflow: scroll;
+}
 /*
 ================
 POST
@@ -186,6 +204,9 @@ POST
 .post {
   max-width: 800px;
   margin: 0 auto;
+  .post-title {
+    margin-bottom: 20px;
+  }
 }
  .share-icons {
     position: fixed;

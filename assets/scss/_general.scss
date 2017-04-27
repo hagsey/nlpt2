@@ -31,8 +31,12 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3 {
+h1 {
   font-weight: 300;
+}
+
+h2, h3, h4 {
+  font-weight: 400;
 }
 
 p {
@@ -50,13 +54,17 @@ blockquote {
 }
 
 section {
-  padding-top: 3em;
+  padding-top: 0;
   padding-bottom: 3em;
   border-bottom: 1px solid #e8e8e8;
 
   h1 {
     margin-bottom: 1em;
   }
+}
+
+section + section {
+  padding-top: 3em;
 }
 
 label {
