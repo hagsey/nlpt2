@@ -6,9 +6,10 @@ $color-dark-gray: #474747;
 $theme-color-dark: #0a0a0a;
 $theme-color-gray: #e2e2e2;
 $theme-color-light: #ffffff;
-$text-link-color: #3b5998;
+$text-link-color: #ddb300;
 $button-red: #e65555;
 $button-email: #2ecc71;
+$yellow: #ffef20;
 
 // Fonts
 $font-title: "Cormorant Garamond", Georgia, serif;
@@ -29,6 +30,7 @@ $mq-xxl: 114em;
 
 img {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -44,6 +46,11 @@ p {
 }
 h2 {
   margin-bottom: 20px;
+}
+
+hr {
+  border-top-color: #c7c7c7;
+  margin-top: 40px;
 }
 
 blockquote {
@@ -72,7 +79,7 @@ label {
   font-weight: 400;
 }
 a {
-  color: #7b7b7b;
+  color: $text-link-color;
     transition: all 0.2s ease;
 
 

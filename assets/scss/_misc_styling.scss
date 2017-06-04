@@ -2,20 +2,22 @@
   margin-top: 20px;
   font-family: 'Rock Salt', Helvetica, sans-serif;
 }
-.address {
-  padding: 10px;
-  display: inline-block;
-  margin-bottom: 10px;
-  border-top: 2px solid $color-highlight-1;
+.quick-info {
+  .header {
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-bottom: 2px solid $color-highlight-1;
+  }
+  
   p {
     margin: 0;
     padding: 0;
-    font-size: 0.8em;
   }
 }
 
 .new:before {
-      content: "new";
+    content: "new";
     color: #ffd10c;
     background: #474747;
     margin-right: 5px;

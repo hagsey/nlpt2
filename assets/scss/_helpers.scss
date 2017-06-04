@@ -2,12 +2,21 @@
   color: #27ae60;
 }
 
+.fa-check-gold {
+  color: #ffd10c;
+}
+
+.fa-close {
+  color: #b00b00;
+}
 .table-small-text {
   td {
     font-size: 0.8em;
   }
 }
-
+.table-schedule tr td p {
+  margin-bottom: 5px;
+}
 .page-header {
   text-align: center;
   font-size: 3.5em;
@@ -151,3 +160,33 @@
 .img-center-100 {
   width: 100%;
 }
+
+// Text highlights
+
+.box {
+  background: gray;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.box-sm {
+  padding: 0.3em;
+}
+
+.box-red {
+  background: $button-red;
+  color: #fff;
+}
+
+.box-yellow {
+  background: $yellow;
+}
+
+.box-blue {
+  background: #d9edf7;
+}
+
+.text-danger {
+  color: #b00b00;
+}
+
