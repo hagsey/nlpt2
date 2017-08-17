@@ -258,7 +258,40 @@ input#mce-EMAIL {
   border-radius: 3px;
   width: 200px; }
 
-/* PORTALS */
+/* EMAIL POPUP */
+#email-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9999; }
+  #email-popup .fa-times {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    margin: 1em; }
+  #email-popup #mc_embed_signup {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding: 1.5em 0; }
+    #email-popup #mc_embed_signup input#mce-EMAIL {
+      border: 1px solid #9a9a9a;
+      width: 100%; }
+    #email-popup #mc_embed_signup #mc-embedded-subscribe {
+      padding: 6px 12px;
+      border: 1px solid black;
+      border-radius: 4px;
+      width: 100%; }
+    #email-popup #mc_embed_signup #mc-embedded-subscribe:hover {
+      background: black; }
+    #email-popup #mc_embed_signup h1 {
+      font-size: 5em;
+      text-align: center; }
+
 /* HERO */
 .hero-wrapper {
   width: 140%;

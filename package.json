@@ -11,6 +11,14 @@
         "desktop": "assets/screenshot-desktop.jpg",
         "mobile": "assets/screenshot-mobile.jpg"
     },
+    "scripts": {
+        "root": "ssh root@159.203.14.131",
+        "podcast": "scp page-podcast.hbs root@159.203.14.131:/var/www/ghost/content/themes/nlpt2/.",
+        "athlete": "scp page-nlpt-athlete.hbs root@159.203.14.131:/var/www/ghost/content/themes/nlpt2/.",
+        "css": "scp assets/css/main.css root@159.203.14.131:/var/www/ghost/content/themes/nlpt2/assets/css/.",
+        "js": "scp assets/js/main.js root@159.203.14.131:/var/www/ghost/content/themes/nlpt2/assets/js/.",
+        "fitness": "scp page-fitness.hbs root@159.203.14.131:/var/www/ghost/content/themes/nlpt2/."
+    },
     "author": {
         "name": "Ghost Foundation",
         "email": "hello@ghost.org",
