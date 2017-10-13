@@ -5,12 +5,20 @@
 <div class="post">
 
 
-{{#if image}}
-  <img src="{{image}}" />
-{{/if}}
 <h1 class="post-title">{{title}}</h1>
-{{!-- <h5 class="text-muted"><i style="margin-right:10px;" class="fa fa-calendar"></i> {{date format="MMMM D, YYYY"}}</h5>
- --}}{{> "share"}}
+<div class="post-meta">
+  <time class="post-date text-muted" datetime="{{date format="YYYY-MM-DD"}}"><i style="margin-right:10px;" class="fa fa-calendar"></i>{{date format="MMMM D, YYYY"}}, </time>
+  {{#if tags}}
+  <div class="text-muted post-tags">
+  In: 
+    {{tags separator=", "}}
+  </div>
+  {{/if}}
+</div>
+{{#if image}}
+  <img class="post-img" src="{{image}}" />
+{{/if}}
+{{> "share"}}
   {{content}}
 </div>
 

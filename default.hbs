@@ -21,15 +21,16 @@
   {{!-- Styles'n'Scripts --}}
   <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Cormorant+Garamond:500|Roboto+Condensed|Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500|Cormorant+Garamond:500|Rock+Salt" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
 
   {{!-- Ghost outputs important style and meta data with this tag --}}
   {{ghost_head}}
 </head>
-    {{> "nav_bar"}}
 <body>
+    {{> "nav_bar"}}
+    <div class="hover-layer"></div> 
   {{> "misc_scripts"}}
   <div class="container">
   {{{body}}}

@@ -1,19 +1,33 @@
 
 
 /* NAVBAR */
+.hover-layer {
+  height: 3px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1049;
+}
+.navbar {
+  // background-color: $theme-color-dark;
+  // border-color: #e8e8e8;
+  padding: 5px 0;
+  border-top: 1px solid $color-highlight-1;
+    // box-shadow: 0 2px 4px 0 rgba(0,0,0,.14);
 
-.navbar-header {
+  .navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+
   .navbar-brand img {
     width: 45px;
     position: absolute;
-    top: 3px;
-  }
-}
-.navbar-default {
-  background-color: white;
-  border-color: #e8e8e8;
-  .navbar-nav > li > a {
-    color: #333;
+    top: 6px;
   }
 }
 
@@ -73,11 +87,16 @@ label[for="mce-EMAIL"] {
 
   #mc_embed_signup {
     width: 90%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     position: relative;
     padding: 1.5em 0;
 
+    form {
+      width: 70%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
     input#mce-EMAIL {
       border: 1px solid #9a9a9a;
       width: 100%;
@@ -107,8 +126,17 @@ label[for="mce-EMAIL"] {
   width: 140%;
   position: relative;
   left: -20%;
-  height: 600px;
+  height: 500px;
   overflow: hidden;
+  background: url('../images/banners/nlpt-main-banner.jpg');
+  background-size: cover;
+  @media (max-width: $mq-md) {
+    height: 400px;
+  } 
+  @media (max-width: $mq-sm) {
+    height: 300px;
+  } 
+  
 }
 .hero-header {
   position: absolute;
@@ -120,12 +148,16 @@ label[for="mce-EMAIL"] {
   .site-title {
     font-family: $font-title;
     font-size: 10em;
+    margin: 0;
+    letter-spacing: 40px;
     color: white;
 
     @media (max-width: $mq-md) {
+      letter-spacing: 30px;
       font-size: 8em;
     } 
     @media (max-width: $mq-sm) {
+      letter-spacing: 20px;
       font-size: 6em;
     } 
   }
@@ -139,6 +171,7 @@ label[for="mce-EMAIL"] {
   .sub-title {
     color: white;
     font-size: 2em;
+    margin: 0;
     font-weight: 300;
 
     @media (max-width: $mq-md) {
@@ -210,20 +243,49 @@ LOOP
 ================
 */
 
-.post-preview-area {
-  padding: 2em 0;
+.loop__item {
+  display: flex;
+  padding-bottom: 2em;
   border-bottom: 1px solid #dadada;
+}
+.loop__item + .loop__item {
+  padding-top: 2em;
+}
+
+.post-preview-area {
+  .post-title {
+    color: #222;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
   time {
     font-weight: 300;
   }
-  img {
-    margin-bottom: 1em;
-  }
+}
+.loop-content {
+}
+
+.loop-img {
+  display: inline-block;
+  margin-right: 1em;
+  height: 150px;
+  width: 210px;
+  background-size: cover;
+  background-position: center center;
+}
+.loop-excerpt {
+  vertical-align: top;
+  display: inline-block;
+  width: calc(100% - 240px);
 }
 .post-preview-area:first-of-type {
   padding-top: 0;
 }
 
+.tag {
+  text-transform: capitalize;
+}
 .tag-loop,
 .archive-loop {
   padding: 0;
@@ -243,17 +305,67 @@ LOOP
   height: 500px;
   overflow: scroll;
 }
+
+.read-more {
+
+}
+
+@media (max-width: $mq-lg) {
+  .loop-img {
+    width: 160px;
+    height: 110px;
+  }
+  .loop-excerpt {
+    width: calc(100% - 180px);
+  }
+}
+@media (max-width: $mq-sm) {
+  .loop-img {
+    display: block;
+  margin-bottom: 1em;
+    width: 100%;
+    height: 170px;
+    margin-right: 0;
+  }
+  .loop-excerpt {
+    display: block;
+    width: 100%;
+  }
+  .post-title {
+    font-size: 24px;
+  }
+}
 /*
 ================
 POST
 ================
 */
 .post {
+  padding: 3em 0;
   max-width: 800px;
   margin: 0 auto;
   .post-title {
     margin-bottom: 20px;
   }
+  h1 {
+    font-weight: 400;
+  }
+  h2, h3, h4, h5 {
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .post-date {
+    font-weight: 400;
+  }
+}
+.post-img {
+  width: 100%;
+}
+.post-meta {
+  margin-bottom: 10px;
+}
+.post-tags {
+  display: inline-block;
 }
  .share-icons {
     position: fixed;

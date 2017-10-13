@@ -11,17 +11,24 @@ $(function() {
         });
     });
 
-    var x = sessionStorage.getItem("respPopUp");
+    // Subscribe popup
+    
+    var visitedPage = sessionStorage.getItem("respPopUp");
 
-    if (!x) {
-      setTimeout(function() {
+    setTimeout(function() {
+      $(".hover-layer").on("mouseover", function() {
+        if (!visitedPage) {
           $("#email-popup").fadeIn();
           $("body").css("overflow", "hidden");
+         
+          visitedPage = true;
           sessionStorage.setItem("respPopUp", true);
+         
           $(".fa-times, .no-thanks, .yes-please").on("click", function() {
-              $("body").css("overflow", "scroll");
-              $("#email-popup").hide();
+            $("body").css("overflow", "scroll");
+            $("#email-popup").hide();
           });
-      }, 7000);      
-    }
+        }
+      });
+    }, 5000);
 });

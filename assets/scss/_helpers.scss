@@ -97,7 +97,8 @@
 
 .img-right-25,
 .img-right-40,
-.img-right-50 {
+.img-right-50,
+.img-right-60 {
   float: right;
   margin-top: 0 !important;
   margin-left: 1em !important;
@@ -128,10 +129,20 @@
   } 
   width: 50%;
 }
+.img-right-60,
+.img-left-60 {
+  @media (max-width: $mq-sm) {
+    width: 100%;
+  } 
+  width: 60%;
+
+}
 
 .img-left-25,
 .img-left-40,
-.img-left-50 {
+.img-left-50,
+.img-left-60 {
+
   float: left !important;
   margin-top: 0 !important;
   margin-left: 0 !important;
@@ -178,6 +189,10 @@
   color: #fff;
 }
 
+.box-highlight {
+  background: $color-highlight-1;
+}
+
 .box-yellow {
   background: $yellow;
 }
@@ -190,3 +205,10 @@
   color: #b00b00;
 }
 
+.no-margin {
+  margin: 0;
+}
+.author {
+  font-style: italic;
+  color: $color-dark-gray;
+}

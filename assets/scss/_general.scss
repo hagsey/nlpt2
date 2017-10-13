@@ -12,7 +12,9 @@ $button-email: #2ecc71;
 $yellow: #ffef20;
 
 // Fonts
-$font-title: "Cormorant Garamond", Georgia, serif;
+// $font-title: "Cormorant Garamond", Georgia, serif;
+$font-title: 'Orbitron', sans-serif;
+$font-body: Georgia, serif;
 
 // Share
 $twitter: #00aced;
@@ -22,7 +24,7 @@ $mail: #ffeb3b;
 
 // Layout
 $mq-xs: 20em;
-$mq-sm: 30em;
+$mq-sm: 35em;
 $mq-md: 54em;
 $mq-lg: 64em;
 $mq-xl: 76.5em;
@@ -35,17 +37,26 @@ img {
 
 h1 {
   font-weight: 300;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 h2, h3, h4 {
   font-weight: 400;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 p {
   margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (max-width: $mq-md) {
+    font-size: 14px;
+  }
 }
 h2 {
-  margin-bottom: 20px;
 }
 
 hr {
@@ -79,8 +90,8 @@ label {
   font-weight: 400;
 }
 a {
-  color: $text-link-color;
-    transition: all 0.2s ease;
+  color: $color-dark-gray;
+  transition: all 0.2s ease;
 
 
 }

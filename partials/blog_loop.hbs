@@ -1,10 +1,19 @@
-{{#get "posts" limit="all"}}
+{{#get "posts" limit="30"}}
   {{#foreach posts}}
-  <div class="post-preview-area">
-        <h4><time class="text-muted" datetime="{{date format="YYYY-MM-DD"}}"><i style="margin-right:10px;" class="fa fa-calendar"></i>{{date format="MMMM D, YYYY"}}</time></h4>
-        <h2><a class="post-title" href="{{url}}">{{title}}</a></h2>
-        {{!-- <img src="{{image}}" /> --}}
-        <p>{{excerpt words="100"}} <a class="read-more" href="{{url}}">Read more &raquo;</a></p>
+  <div class="loop__item">
+    <div class="post-preview-area">
+      <time class="text-muted" datetime="{{date format="YYYY-MM-DD"}}"><i style="margin-right:10px;" class="fa fa-calendar"></i>{{date format="MMMM D, YYYY"}}</time>
+      <a class="post-title" href="{{url}}">{{title}}</a>
+      <div class="loop-content">
+        {{#if image}}
+        <div class="loop-img" style="background-image:url({{image}})"></div>
+        {{else}}
+        <div class="loop-img" style="background-image:url(/assets/images/camb-gym-5.jpg)"></div>
+        {{/if}}
+
+        <p class="loop-excerpt">{{excerpt words="35"}} <a class="read-more" href="{{url}}">...read more &raquo;</a></p>
+      </div>
+    </div>
   </div>
   {{/foreach}}
 {{/get}}
