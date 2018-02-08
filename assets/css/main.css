@@ -8,7 +8,7 @@ h1 {
   margin-top: 1em; }
 
 h2, h3, h4 {
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 1em;
   margin-top: 1em; }
 
@@ -45,12 +45,15 @@ label {
   font-weight: 400; }
 
 a {
-  color: #474747;
+  color: #e1b80a;
   transition: all 0.2s ease; }
 
 a:hover {
   text-decoration: none;
   color: #ffd10c; }
+
+.panel a {
+  color: #3498db; }
 
 body {
   margin-top: 50px; }
@@ -67,8 +70,11 @@ body {
 .fa-close {
   color: #b00b00; }
 
-.table-small-text td {
-  font-size: 0.8em; }
+.table-small-text td, .table-small-text p {
+  font-size: 0.9em;
+  margin: 0; }
+.table-small-text h5 {
+  margin: 0; }
 
 .table-schedule tr td p {
   margin-bottom: 5px; }
@@ -240,7 +246,10 @@ body {
   background: #d9edf7; }
 
 .text-danger {
-  color: #b00b00; }
+  color: #ee5253; }
+
+.text-white {
+  color: #fff; }
 
 .no-margin {
   margin: 0; }
@@ -298,11 +307,11 @@ input#mce-EMAIL {
 /* EMAIL POPUP */
 #email-popup {
   position: fixed;
+  background: url("../images/email-cover2.jpg");
   top: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background-position: center;
   z-index: 9999; }
   #email-popup .fa-times {
     position: absolute;
@@ -315,6 +324,16 @@ input#mce-EMAIL {
     margin: 0 auto;
     position: relative;
     padding: 1.5em 0; }
+    #email-popup #mc_embed_signup h1 {
+      font-size: 5em;
+      text-align: center; }
+      #email-popup #mc_embed_signup h1 span {
+        color: #ffd10c; }
+      @media (max-width: 35em) {
+        #email-popup #mc_embed_signup h1 {
+          font-size: 3em; } }
+    #email-popup #mc_embed_signup h1, #email-popup #mc_embed_signup h3, #email-popup #mc_embed_signup p {
+      color: white; }
     #email-popup #mc_embed_signup form {
       width: 70%;
       max-width: 500px;
@@ -329,9 +348,6 @@ input#mce-EMAIL {
       width: 100%; }
     #email-popup #mc_embed_signup #mc-embedded-subscribe:hover {
       background: black; }
-    #email-popup #mc_embed_signup h1 {
-      font-size: 5em;
-      text-align: center; }
 
 /* HERO */
 .hero-wrapper {
@@ -606,6 +622,72 @@ CONTACT MODAL
   background: rgba(39, 39, 39, 0.6);
   z-index: 2; }
 
+.alumni-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center; }
+  @media (min-width: 35em) {
+    .alumni-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  @media (min-width: 54em) {
+    .alumni-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+  @media (min-width: 64em) {
+    .alumni-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
+
+.player-name {
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: bold; }
+
+.player-sport,
+.player-team {
+  margin: 0;
+  font-size: 0.8em;
+  font-style: italic; }
+
+.player-sport {
+  font-style: normal; }
+
+.player-img {
+  width: 125px;
+  box-shadow: 1px 1px 3px 1px #736f6f;
+  height: 125px;
+  background: url(../images/athletes/default.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 7px; }
+
+.wall-of-fame-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  justify-items: center; }
+  @media (min-width: 35em) {
+    .wall-of-fame-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  @media (min-width: 64em) {
+    .wall-of-fame-grid {
+      grid-gap: 20px; } }
+  .wall-of-fame-grid .player-img {
+    width: 150px;
+    height: 150px; }
+    @media (min-width: 64em) {
+      .wall-of-fame-grid .player-img {
+        width: 175px;
+        height: 175px; } }
+
+section.testimonial {
+  padding: 3em;
+  margin: 3em 0;
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8; }
+  section.testimonial p {
+    font-size: 1.2em;
+    font-style: italic; }
+
 .signature {
   margin-top: 20px;
   font-family: 'Rock Salt', Helvetica, sans-serif; }
@@ -630,5 +712,240 @@ CONTACT MODAL
   line-height: 14px;
   padding: 2px 6px;
   border-radius: 3px; }
+
+.section-heading span {
+  background: black;
+  color: white; }
+
+.ballantyne {
+  background-image: url("../images/athletes/ballantyne.jpg"); }
+
+.behenna {
+  background-image: url("../images/athletes/behenna.jpg"); }
+
+.blight {
+  background-image: url("../images/athletes/blight.jpg"); }
+
+.brubacher {
+  background-image: url("../images/athletes/brubacher.jpg"); }
+
+.childerley {
+  background-image: url("../images/athletes/childerley.jpg"); }
+
+.core {
+  background-image: url("../images/athletes/core.jpg"); }
+
+.coupland {
+  background-image: url("../images/athletes/coupland.jpg"); }
+
+.courtney {
+  background-image: url("../images/athletes/courtney.jpg"); }
+
+.dalrymple {
+  background-image: url("../images/athletes/dalrymple.jpg"); }
+
+.dejong {
+  background-image: url("../images/athletes/dejong.jpg"); }
+
+.dempsey {
+  background-image: url("../images/athletes/dempsey.jpg"); }
+
+.devine {
+  background-image: url("../images/athletes/devine.jpg"); }
+
+.doherty {
+  background-image: url("../images/athletes/doherty.jpg"); }
+
+.dotchin {
+  background-image: url("../images/athletes/dotchin.jpg"); }
+
+.foster {
+  background-image: url("../images/athletes/foster.jpg"); }
+
+.furlong {
+  background-image: url("../images/athletes/furlong.jpg"); }
+
+.genovese {
+  background-image: url("../images/athletes/genovese.jpg"); }
+
+.gibb {
+  background-image: url("../images/athletes/gibb.jpg"); }
+
+.gilhula {
+  background-image: url("../images/athletes/gilhula.jpg"); }
+
+.gilligan {
+  background-image: url("../images/athletes/gilligan.jpg"); }
+
+.good {
+  background-image: url("../images/athletes/good.jpg"); }
+
+.grant {
+  background-image: url("../images/athletes/grant.jpg"); }
+
+.gaudet {
+  background-image: url("../images/athletes/gaudet.jpg"); }
+
+.haddaway {
+  background-image: url("../images/athletes/haddaway.jpg"); }
+
+.halmo {
+  background-image: url("../images/athletes/halmo.jpg"); }
+
+.harding {
+  background-image: url("../images/athletes/harding.jpg"); }
+
+.harrietha {
+  background-image: url("../images/athletes/harrietha.jpg"); }
+
+.henderson {
+  background-image: url("../images/athletes/henderson.jpg"); }
+
+.hertel {
+  background-image: url("../images/athletes/hertel.jpg"); }
+
+.hiff {
+  background-image: url("../images/athletes/hiff.jpg"); }
+
+.jutzi {
+  background-image: url("../images/athletes/jutzi.jpg"); }
+
+.klahsen {
+  background-image: url("../images/athletes/klahsen.jpg"); }
+
+.klie {
+  background-image: url("../images/athletes/klie.jpg"); }
+
+.kohli {
+  background-image: url("../images/athletes/kohli.jpg"); }
+
+.koncir {
+  background-image: url("../images/athletes/koncir.jpg"); }
+
+.kostigian {
+  background-image: url("../images/athletes/kostigian.jpg"); }
+
+.krebs {
+  background-image: url("../images/athletes/krebs.jpg"); }
+
+.kress {
+  background-image: url("../images/athletes/kress.jpg"); }
+
+.ladhani {
+  background-image: url("../images/athletes/ladhani.jpg"); }
+
+.landman {
+  background-image: url("../images/athletes/landman.jpg"); }
+
+.lowry {
+  background-image: url("../images/athletes/lowry.jpg"); }
+
+.macdonald {
+  background-image: url("../images/athletes/macdonald.jpg"); }
+
+.macey {
+  background-image: url("../images/athletes/macey.jpg"); }
+
+.machalski {
+  background-image: url("../images/athletes/machalski.jpg"); }
+
+.maidment {
+  background-image: url("../images/athletes/maidment.jpg"); }
+
+.manning {
+  background-image: url("../images/athletes/manning.jpg"); }
+
+.mcclure {
+  background-image: url("../images/athletes/mcclure.jpg"); }
+
+.mckague {
+  background-image: url("../images/athletes/mckague.jpg"); }
+
+.mckeown {
+  background-image: url("../images/athletes/mckeown.jpg"); }
+
+.mcphee {
+  background-image: url("../images/athletes/mcphee.jpg"); }
+
+.middleton {
+  background-image: url("../images/athletes/middleton.jpg"); }
+
+.otoole {
+  background-image: url("../images/athletes/otoole.jpg"); }
+
+.owenmacdonald {
+  background-image: url("../images/athletes/owenmacdonald.jpg"); }
+
+.patton {
+  background-image: url("../images/athletes/patton.jpg"); }
+
+.pellegrino {
+  background-image: url("../images/athletes/pellegrino.jpg"); }
+
+.pickering {
+  background-image: url("../images/athletes/pickering.jpg"); }
+
+.pittaway {
+  background-image: url("../images/athletes/pittaway.jpg"); }
+
+.platzer {
+  background-image: url("../images/athletes/platzer.jpg"); }
+
+.pugliese {
+  background-image: url("../images/athletes/pugliese.jpg"); }
+
+.rimmer {
+  background-image: url("../images/athletes/rimmer.jpg"); }
+
+.ruby {
+  background-image: url("../images/athletes/ruby.jpg"); }
+
+.russell {
+  background-image: url("../images/athletes/russell.jpg"); }
+
+.schmidt {
+  background-image: url("../images/athletes/schmidt.jpg"); }
+
+.seraphim {
+  background-image: url("../images/athletes/seraphim.jpg"); }
+
+.sonnenburg {
+  background-image: url("../images/athletes/sonnenburg.jpg"); }
+
+.snider {
+  background-image: url("../images/athletes/snider.jpg"); }
+
+.stajcer {
+  background-image: url("../images/athletes/stajcer.jpg"); }
+
+.subban {
+  background-image: url("../images/athletes/subban.jpg"); }
+
+.vanboekel {
+  background-image: url("../images/athletes/vanboekel.jpg"); }
+
+.vandyk {
+  background-image: url("../images/athletes/vandyk.jpg"); }
+
+.vanpelt {
+  background-image: url("../images/athletes/vanpelt.jpg"); }
+
+.wale {
+  background-image: url("../images/athletes/wale.jpg"); }
+
+.weber {
+  background-image: url("../images/athletes/weber.jpg"); }
+
+.wilson {
+  background-image: url("../images/athletes/wilson.jpg"); }
+
+.winkler {
+  background-image: url("../images/athletes/winkler.jpg"); }
+
+.wood {
+  background-image: url("../images/athletes/wood.jpg"); }
+
+.woods {
+  background-image: url("../images/athletes/woods.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

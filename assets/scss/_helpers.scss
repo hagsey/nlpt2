@@ -10,8 +10,12 @@
   color: #b00b00;
 }
 .table-small-text {
-  td {
-    font-size: 0.8em;
+  td, p {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  h5 {
+    margin: 0;
   }
 }
 .table-schedule tr td p {
@@ -202,7 +206,10 @@
 }
 
 .text-danger {
-  color: #b00b00;
+  color: #ee5253;
+}
+.text-white {
+  color: #fff;
 }
 
 .no-margin {
