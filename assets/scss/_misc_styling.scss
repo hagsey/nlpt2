@@ -30,6 +30,12 @@
 }
 
 .section-heading {
+  margin-top: 3em;
+  color: white;
+  background: $color-highlight-1;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+
   span {
     background: black;
     color: white;

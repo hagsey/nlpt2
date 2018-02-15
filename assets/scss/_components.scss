@@ -79,6 +79,7 @@ label[for="mce-EMAIL"] {
   // left: 0;
   bottom: 0;
   background-position: center;
+  background-repeat: no-repeat;
   // background: rgba(255, 255, 255, 0.92);
 
   z-index: 9999;
@@ -563,4 +564,40 @@ section.testimonial {
     font-size: 1.2em;
     font-style: italic;
   }
+}
+
+// INDEX PAGE
+
+.events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.event-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 1px 1px 3px 1px #736f6f;
+  @media (max-width: $mq-md) {
+    height: 150px;    
+  }
+
+  @media (max-width: $mq-sm) {
+    height: 100px;    
+  }
+}
+
+.event-info {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.event-name {
+  margin: 0;
 }

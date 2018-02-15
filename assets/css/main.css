@@ -5,7 +5,8 @@ img {
 h1 {
   font-weight: 300;
   margin-bottom: 1em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  font-size: 3.5em; }
 
 h2, h3, h4 {
   font-weight: 500;
@@ -18,6 +19,13 @@ p {
   line-height: 1.5; }
   @media (max-width: 54em) {
     p {
+      font-size: 14px; } }
+
+ol li {
+  font-size: 16px;
+  line-height: 1.5; }
+  @media (max-width: 54em) {
+    ol li {
       font-size: 14px; } }
 
 hr {
@@ -33,7 +41,7 @@ blockquote {
 section {
   padding-top: 0;
   padding-bottom: 3em;
-  border-bottom: 1px solid #e8e8e8; }
+  border-bottom: 1px solid #d8d8d8; }
   section h1 {
     margin-bottom: 1em; }
 
@@ -258,6 +266,33 @@ body {
   font-style: italic;
   color: #474747; }
 
+.bg-gold {
+  background: #fff3b2; }
+
+.fullscreen-image {
+  width: 110%;
+  left: -5%;
+  position: relative;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media (min-width: 35em) {
+    .fullscreen-image {
+      height: 500px; } }
+  @media (min-width: 54em) {
+    .fullscreen-image {
+      width: 130%;
+      left: -15%;
+      height: 600px; } }
+  @media (min-width: 64em) {
+    .fullscreen-image {
+      width: 140%;
+      left: -20%; } }
+
+.padding-1 {
+  padding: 1em; }
+
 /* NAVBAR */
 .hover-layer {
   height: 3px;
@@ -312,6 +347,7 @@ input#mce-EMAIL {
   width: 100%;
   bottom: 0;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: 9999; }
   #email-popup .fa-times {
     position: absolute;
@@ -688,6 +724,35 @@ section.testimonial {
     font-size: 1.2em;
     font-style: italic; }
 
+.events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px; }
+
+.event-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 1px 1px 3px 1px #736f6f; }
+  @media (max-width: 54em) {
+    .event-image {
+      height: 150px; } }
+  @media (max-width: 35em) {
+    .event-image {
+      height: 100px; } }
+
+.event-info {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px; }
+
+.event-name {
+  margin: 0; }
+
 .signature {
   margin-top: 20px;
   font-family: 'Rock Salt', Helvetica, sans-serif; }
@@ -713,9 +778,15 @@ section.testimonial {
   padding: 2px 6px;
   border-radius: 3px; }
 
-.section-heading span {
-  background: black;
-  color: white; }
+.section-heading {
+  margin-top: 3em;
+  color: white;
+  background: #ffd10c;
+  padding: 0.5em 1em;
+  text-transform: uppercase; }
+  .section-heading span {
+    background: black;
+    color: white; }
 
 .ballantyne {
   background-image: url("../images/athletes/ballantyne.jpg"); }
@@ -836,6 +907,9 @@ section.testimonial {
 
 .landman {
   background-image: url("../images/athletes/landman.jpg"); }
+
+.landry {
+  background-image: url("../images/athletes/landry.jpg"); }
 
 .lowry {
   background-image: url("../images/athletes/lowry.jpg"); }
