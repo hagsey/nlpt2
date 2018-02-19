@@ -568,6 +568,10 @@ section.testimonial {
 
 // INDEX PAGE
 
+.portals a h3 {
+  color: $color-highlight-1;
+  text-transform: uppercase;
+}
 .events {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -589,6 +593,9 @@ section.testimonial {
   @media (max-width: $mq-sm) {
     height: 100px;    
   }
+}
+.event-image-cover {
+  background-size: cover;
 }
 
 .event-info {

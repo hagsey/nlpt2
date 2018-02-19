@@ -211,9 +211,11 @@
 .text-white {
   color: #fff;
 }
-
-.no-margin {
-  margin: 0;
+.text-thin {
+  font-weight: 300;
+}
+.text-extra-thin {
+  font-weight: 100;
 }
 .author {
   font-style: italic;
@@ -259,8 +261,24 @@
   // left: -25%;
 
 }
+
+// Positioning
+
 // Padding and margins
 
 .padding-1 {
   padding: 1em;
+}
+
+.padding-half-1 {
+  padding: 1em;
+}
+.no-margin {
+  margin: 0;
+}
+.no-margin-top {
+  margin-top: 0;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
 }

@@ -7,6 +7,9 @@ h1 {
   margin-bottom: 1em;
   margin-top: 1em;
   font-size: 3.5em; }
+  @media (max-width: 35em) {
+    h1 {
+      font-size: 2.5em; } }
 
 h2, h3, h4 {
   font-weight: 500;
@@ -259,8 +262,11 @@ body {
 .text-white {
   color: #fff; }
 
-.no-margin {
-  margin: 0; }
+.text-thin {
+  font-weight: 300; }
+
+.text-extra-thin {
+  font-weight: 100; }
 
 .author {
   font-style: italic;
@@ -292,6 +298,18 @@ body {
 
 .padding-1 {
   padding: 1em; }
+
+.padding-half-1 {
+  padding: 1em; }
+
+.no-margin {
+  margin: 0; }
+
+.no-margin-top {
+  margin-top: 0; }
+
+.no-margin-bottom {
+  margin-bottom: 0; }
 
 /* NAVBAR */
 .hover-layer {
@@ -724,6 +742,10 @@ section.testimonial {
     font-size: 1.2em;
     font-style: italic; }
 
+.portals a h3 {
+  color: #ffd10c;
+  text-transform: uppercase; }
+
 .events {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -743,6 +765,9 @@ section.testimonial {
   @media (max-width: 35em) {
     .event-image {
       height: 100px; } }
+
+.event-image-cover {
+  background-size: cover; }
 
 .event-info {
   text-align: center;
@@ -787,6 +812,19 @@ section.testimonial {
   .section-heading span {
     background: black;
     color: white; }
+
+.category .category-top {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ffd10c;
+  padding-bottom: 10px;
+  width: 400px;
+  color: gray;
+  font-weight: 300; }
+.category .category-bottom {
+  margin-top: 10px; }
+
+.category {
+  margin-top: 5em; }
 
 .ballantyne {
   background-image: url("../images/athletes/ballantyne.jpg"); }
